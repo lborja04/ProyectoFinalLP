@@ -1,0 +1,92 @@
+.navBar {
+  width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #8c52ff;
+  padding: 15px 5%; /* Reduce el padding lateral para mayor ajuste */
+  box-sizing: border-box; /* Incluye padding y borde dentro del ancho */
+  color: white;
+  overflow: hidden; /* Evita que el contenido desborde */
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 20px;
+  padding-left: 20px;
+  color: white; /* Asegura que el texto sea blanco */
+}
+
+ul {
+  flex: 1;
+  list-style: none;
+  text-align: center;
+  margin: 0; /* Elimina márgenes externos */
+  padding: 0; /* Elimina padding interno */
+}
+
+ul li {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white; /* Hace que las letras sean blancas */
+}
+
+/* Para los enlaces dentro del navbar */
+ul li a {
+  text-decoration: none;
+  color: white; /* Asegura que los enlaces sean blancos */
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 10px 15px; /* Ajuste del padding */
+  border-radius: 50px;
+  max-width: 300px; /* Limita el ancho máximo de la caja de búsqueda */
+  overflow: hidden; /* Evita desbordes */
+}
+
+.search-box input {
+  padding: 6px;
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: black; /* Cambia a negro para que sea visible dentro del fondo blanco */
+  font-size: 18px;
+  max-width: 200px; /* Ajusta el ancho máximo del input */
+  flex: 1; /* Permite que el input se ajuste al tamaño disponible */
+}
+
+.user-link {
+  font-size: 18px;
+  margin: 10px 20px;
+  padding-left: 20px;
+  color: white; /* Texto blanco */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.user-link:hover {
+  text-decoration: underline;
+}
+
+.exit-link {
+  font-size: 18px;
+  margin: 10px 20px;
+  padding-left: 20px;
+  color: white; /* Texto blanco */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.exit-link:hover {
+  text-decoration: underline;
+}

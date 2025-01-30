@@ -1,0 +1,72 @@
+.configuration {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start; /* Alinear elementos al inicio verticalmente */
+    justify-content: space-between;
+    height: auto; /* Adaptar la altura al contenido */
+    width: 90%; /* Mejor ajuste al ancho de la pantalla */
+    margin: 20px auto; /* Centrar el contenedor */
+    gap: 20px; /* Espacio entre opciones y gráfico */
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear opciones a la izquierda */
+    justify-content: flex-start;
+    margin-top: 20px; /* Menor margen superior */
+    gap: 10px; /* Espacio entre las opciones */
+    width: 20%; /* Limitar el ancho de la barra de opciones */
+}
+
+h4.option {
+    font-weight: bold;
+    font-size: 18px; /* Reducir tamaño del texto */
+    color: #8c52ff;
+    margin: 5px 0; /* Reducir márgenes verticales */
+    padding: 8px 12px; /* Espaciado interno */
+    background: #f9f9f9; /* Fondo claro para destacar */
+    border: 1px solid #ddd; /* Bordes ligeros */
+    border-radius: 5px; /* Bordes redondeados */
+    text-align: center; /* Centrar el texto */
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+h4.option:hover {
+    background: #ececec; /* Cambiar color al pasar el mouse */
+}
+
+h4.option:last-child {
+    color: red; /* Destacar "Cerrar sesión" */
+    border-color: red; /* Bordes rojos */
+}
+
+.Graphic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%; /* Ocupa el resto del espacio */
+    margin-top: 0;
+    gap: 20px;
+}
+
+.total {
+    border: 2px solid #3c1786;
+    border-radius: 5px;
+    width: 100%; /* Ocupa el ancho disponible */
+    max-width: 400px; /* Limitar el ancho máximo */
+    background: #8c52ff;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para destacar */
+}
+
+.total p {
+    font-size: 28px; /* Reducir tamaño del texto */
+    color: white;
+    margin: 0;
+}

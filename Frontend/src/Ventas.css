@@ -1,0 +1,94 @@
+/* Encapsular los estilos dentro de .ventas-page */
+.ventas-page .ventas-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  width: 90vw; /* Ajustar ancho similar al catálogo */
+  max-width: 1200px; /* Tamaño máximo igual al catálogo */
+  background-color: #ffffff;
+  border-radius: 20px; /* Coincidir con el catálogo */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra similar */
+  padding: 2rem; /* Reducir el padding para uniformidad */
+  box-sizing: border-box;
+  min-height: 80vh; /* Altura mínima similar */
+  position: relative;
+}
+
+/* Formulario a ancho completo */
+.ventas-page .ventas-container form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+}
+
+/* Previsualización de imágenes */
+.ventas-page .image-preview {
+  width: 100%;
+  max-width: 400px; /* Máximo ancho */
+  max-height: 300px; /* Máximo alto */
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.ventas-page .image-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Asegura que la imagen se ajuste */
+}
+
+/* Botón para regresar */
+.ventas-page .back-button {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ventas-page .back-button:hover {
+  background-color: #45a049;
+}
+
+/* Ajustar título */
+.ventas-page .ventas-container h2 {
+  font-size: 2.4rem; /* Reducido para uniformidad */
+  margin-bottom: 2rem;
+}
+
+/* Entradas y botones */
+.ventas-page .ventas-container input,
+.ventas-page .ventas-container textarea,
+.ventas-page .ventas-container button {
+  max-width: 100%;
+  width: 100%;
+  padding: 0.8rem; /* Padding uniforme */
+  font-size: 1rem; /* Ajustar tamaño de texto */
+}
+
+/* Media queries para pantallas grandes */
+@media (min-width: 768px) {
+  .ventas-page .ventas-container {
+    padding: 3rem;
+    width: 90%; /* Igual al catálogo */
+  }
+
+  .ventas-page .ventas-container input,
+  .ventas-page .ventas-container textarea {
+    padding: 1.2rem;
+    font-size: 1rem;
+  }
+
+  .ventas-page .image-preview {
+    max-height: 350px; /* Ajustar para pantallas más grandes */
+  }
+}
