@@ -1,0 +1,76 @@
+/* Estilo principal para el contenedor */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  background: white;
+  color: white;
+}
+
+/* Título del formulario */
+.login-container h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  font-family: Arial, sans-serif;
+}
+
+/* Formulario */
+.login-container form {
+  background-color: #ffffff;
+  color: #333;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Inputs del formulario */
+.login-container input {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.75rem 0;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  background-color: #222;
+  color: #fff;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.login-container input:focus {
+  background-color: #333;
+  outline: none;
+  transform: scale(1.02);
+}
+
+/* Botón de enviar */
+.login-container button {
+  width: 100%;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  background-color: #8e44ad;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.login-container button:hover {
+  background-color: #732d91;
+  transform: translateY(-2px);
+}
+
+/* Mensaje de error o éxito */
+.login-container p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  text-align: center;
+}

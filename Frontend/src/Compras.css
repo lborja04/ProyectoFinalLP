@@ -1,0 +1,76 @@
+.compras-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px;
+  background-color: #e0e0e0; /* 🔹 Fondo gris claro para contraste */
+  min-height: 50vh; /* 🔹 Asegura que ocupe toda la pantalla */
+}
+
+.compras-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid #888;
+  background-color: #ffffff; /* 🔹 Fondo blanco para cada ítem */
+  border-radius: 8px;
+}
+
+.compras-item img {
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.compras-item p {
+  color: black !important; /* 🔹 Asegura que los textos sean negros */
+  font-size: 18px;
+  font-weight: bold;
+}
+
+h2,
+p {
+  color: black !important; /* 🔹 Asegura que todos los textos sean negros */
+}
+
+.cart-summary {
+  display: flex;
+  flex-direction: column; /* Elementos en columna */
+  justify-content: center; /* Centrar verticalmente */
+  align-items: center; /* Centrar horizontalmente */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  margin-top: 20px;
+  max-width: 400px; /* Limitar ancho */
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+/* Total del carrito */
+.cart-summary p {
+  font-size: 20px; /* Tamaño del texto del total */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px; /* Espaciado debajo del total */
+}
+
+/* Botón de pagar */
+.pay-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 12px 30px; /* Botón más ancho */
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.pay-btn:hover {
+  background: #45a049;
+  transform: scale(1.05); /* Efecto hover */
+}
